@@ -1,7 +1,24 @@
+::selection {
+    background: lightsalmon;
+    color: #111;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+
+audio {
+    width: 80%;
+    transition-duration: 0.4s;
+}
+
 body {
     background-color: #222;
-    position: relative;
-    font-family: nunito;
+    font-family: 'Nunito', sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -31,18 +48,141 @@ text {
     color: rgb(177, 177, 177);
 }
 
-.textmuted {
-    color: gray;
+object {
+    display: flex;
+    z-index: 9;
+    height: 100vh;
+    width: 100vw;
 }
 
-.titlebig {
-    color: lightskyblue;
-    font-size: 2rem;
+.row {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin: auto;
+    max-width: 70vw;
 }
 
-.titlesmall {
-    color: lightskyblue;
-    font-size: 1.6rem;
+.card {
+    background-color: #111;
+    justify-content: center;
+    align-content: center;
+    display: inline-block;
+    border: 2px solid transparent;
+    color: lightgrey;
+    transition-duration: 0.2s;
+    border-radius: 25px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin: 1rem;
+    height: 400px;
+    width: 300px;
+}
+
+.card:hover {
+    color: lightsalmon;
+    border: 2px solid lightsalmon;
+    cursor: pointer;
+}
+
+.card:hover audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card:hover .sharebtn {
+    background-color: lightsalmon;
+    height: 40px;
+}
+
+.card:hover .sharetxt {
+    color: #111;
+}
+
+.cardicon {
+    fill: lightsalmon;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: -23px !important;
+    width: 100px;
+}
+
+.cardimg {
+    margin: auto;
+    border-radius: 15px;
+    margin-top: -23px !important;
+    width: 150px;
+}
+
+.cardtext {
+    text-decoration: none;
+    color: inherit;
+    margin-top: 40px;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.container {
+    margin: 75px;
+}
+
+.cover {
+    border-radius: 100%;
+    max-width: 300px;
+    width: 50%;
+}
+
+.floater {
+    position: absolute;
+    float: right;
+    width: 80px;
+    top: 85vh;
+    left: 90vw;
+}
+
+.floaterbtn {
+    background-color: lightsalmon;
+    border: none;
+    transition-duration: 0.4s;
+    border-radius: 100%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    margin: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.floaterbtn:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+    border-radius: 100%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.floatericon {
+    fill: #111;
+    transition-duration: 0.4s;
+    height: 35px;
+    width: 35px;
+}
+
+.homeimg {
+    top: -10px;
+    left: 73.8vw;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+}
+
+.icon {
+    fill: lightgray;
+    transition-duration: 0.4s;
+    height: 25px;
+    width: 25px;
 }
 
 .link {
@@ -52,14 +192,49 @@ text {
 }
 
 .link:hover {
-    color: lightskyblue;
+    color: lightsalmon;
 }
 
-object {
+.lost {
     display: flex;
     z-index: 9;
     height: 100vh;
     width: 100vw;
+}
+
+.textmuted {
+    color: gray;
+}
+
+.titlebig {
+    color: lightsalmon;
+    font-size: 2rem;
+}
+
+.titlesmall {
+    color: lightsalmon;
+    font-size: 1.6rem;
+}
+
+.sharebtn {
+    height: 0px;
+    width: 50%;
+    background-color: #111;
+    margin: auto;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    padding-top: 15px;
+}
+
+.sharebtn:hover {
+    background-color: lightgrey !important;
+}
+
+.sharetxt {
+    text-decoration: none;
+    color: lightgrey;
+    transition-duration: 0.4s;
+    margin: auto;
 }
 
 .sidebar {
@@ -88,81 +263,7 @@ object {
 }
 
 .sidebtn:hover .icon {
-    fill:lightskyblue;
-}
-
-.cover {
-    border-radius: 100%;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    max-width: 300px;
-    width: 50%;
-}
-
-.center {
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.container {
-    margin: 75px;
-}
-
-.row {
-    justify-content: center;
-    align-content: center;
-    display: flex;
-    margin: auto;
-    max-width: 70vw;
-}
-
-.card {
-    background-color: #111;
-    justify-content: center;
-    align-content: center;
-    border: 2px solid transparent;
-    color: lightgrey;
-    transition-duration: 0.2s;
-    border-radius: 25px;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    margin: 1rem;
-    height: 400px;
-    width: 300px;
-}
-
-.card:hover {
-    color: lightskyblue;
-    border: 2px solid lightskyblue;
-    cursor: pointer;
-}
-
-.cardimg {
-    margin: auto;
-    border-radius: 15px;
-    margin-top: -23px !important;
-    width: 250px;
-}
-
-.cardtext {
-    text-decoration: none;
-    color: inherit;
-    margin-top: 40px;
-}
-
-.icon {
-    fill: lightgray;
-    transition-duration: 0.4s;
-    height: 25px;
-    width: 25px;
-}
-
-.lost {
-    display: flex;
-    z-index: 9;
-    height: 100vh;
-    width: 100vw;
+    fill:lightsalmon;
 }
 
 .footer {
@@ -177,8 +278,29 @@ object {
 }
 
 @media screen and (max-width:1200px) {
+    audio {
+        width:90%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
     h3 {
         font-size: 1.8rem;
+    }
+
+    .floater {
+        top: 90%;
+        left: 80%;
+    }
+
+    .floaterbtn {
+        height: 160px;
+        width: 160px;
+    }
+
+    .floatericon {
+        height: 80px;
+        width: 80px;
     }
 
     .sidebar {
@@ -192,8 +314,8 @@ object {
     }
 
     .sidebtn {
-        width: 150px;
         height: 150px;
+        width: 150px;
     }
 
     .mobilespacer {
@@ -201,23 +323,32 @@ object {
     }
 
     .row {
+        max-width: none;
         display: block;
         margin-top: 50px;
-        max-width: none;
     }
 
     .card {
-        height: 400px;
-        width: 100%;
+        display: flex;
         margin: auto;
         margin-bottom: 50px;
-        display: flex;
+        height: 400px;
+        width: 100%;
     }
 
+    .cardicon {
+        fill: lightsalmon;
+        margin-right: 0px;
+        margin-left: 120px;
+        margin-top: 120px !important;
+        height: 150px;
+        width: 150px;
+    }
+    
     .cardimg {
+        margin-right: 0px;
         margin-left: 20px;
         margin-top: 20px !important;
-        margin-right: 0px;
         height: 350px;
         width: 350px;
     }
@@ -232,5 +363,44 @@ object {
         height: 4rem;
         width: 4rem;
     }
+
+    .carddesc {
+        display: inline-block;
+        margin-top: 175px;
+        width: 70%;
+    }
     
+    .acarddesc {
+        left: -500px;
+        margin-top: 75px;
+        width: 70%;
+    }
+    
+    .acardicon {
+        fill: lightsalmon;
+        margin: auto;
+        border-radius: 15px;
+        margin-top: 120px !important;
+        width: 100px;
+        z-index: 9;
+    }
+    
+    .acardtext {
+        text-decoration: none;
+        color: inherit;
+        margin-top: 40px;
+    }
+
+    .sharebtn {
+        background-color: lightsalmon;
+        height: 60px;
+        width: 90%;
+        border-radius: 25px;
+    }
+
+    .sharetxt {
+        color:#111;
+        font-size: 36px;
+    }
+
 }
