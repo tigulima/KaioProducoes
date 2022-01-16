@@ -46,6 +46,7 @@ text {
     width: 100%;
     max-width: 1000px;
     color: rgb(177, 177, 177);
+    text-align: justify;
 }
 
 object {
@@ -143,6 +144,7 @@ object {
     width: 80px;
     top: 85vh;
     left: 90vw;
+    z-index: 9999;
 }
 
 .floaterbtn {
@@ -239,10 +241,11 @@ object {
 
 .sidebar {
     background-color: transparent;
-    position: absolute;
+    position: fixed;
     float: left;
     width: 80px;
     top: 33%;
+    z-index: 9999;
 }
 
 .sidebtn {
